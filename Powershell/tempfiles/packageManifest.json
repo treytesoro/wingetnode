@@ -1,0 +1,33 @@
+﻿{
+    "PackageVersion":  "5.0.20211.51073",
+    "PublisherSupportUrl":  "",
+    "Installers":  [
+                       {
+                           "Architecture":  "x64",
+                           "InstallerType":  "nullsoft",
+                           "InstallerSha256":  "5C92F0738C290EAC319D4AC3006B5725F1D2163FBFE68DBB2047E07920F4D5E8",
+                           "InstallMode":  "silent",
+                           "InstallerSwitches":  {
+                                                     "Silent":  "/S"
+                                                 },
+                           "InstallerUrl":  "https://dmtdev.itportal.sentara.com:7071/api/downloads/FiddlerSetup.exe"
+                       }
+                   ],
+    "License":  "No license information available",
+    "Copyright":  "Copyright ©2003 - 2021 Progress Software Corporation. All rights reserved.",
+    "PackageLocale":  "en-US",
+    "Tags":  [
+			"fiddler", "fiddler classic", "telerik"
+             ],
+    "PackageIdentifier":  "Progress Software Corporation.Progress Telerik Fiddler Classic Setup",
+    "Description":  "No description available",
+    "Publisher":  "Progress Software Corporation",
+    "PrivacyUrl":  "",
+    "Agreements":  [
+
+                   ],
+    "Author":  "Progress Software Corporation",
+    "PackageName":  "Progress Telerik Fiddler Classic Setup",
+    "ShortDescription":  "No description available",
+    "PublisherUrl":  ""
+}

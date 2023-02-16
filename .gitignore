@@ -1,0 +1,16 @@
+
+/noclone/
+/.vs/
+/node_modules/
+packages/
+/*.crt
+/*.key
+/*.pem
+/*.msix
+/bin/
+/*.zip
+/*.msi
+wingetcreate.exe
+temp.msi
+temp.exe
+msiprops.exe

@@ -1,0 +1,33 @@
+﻿{
+    "PackageVersion":  "1.1.2",
+    "PublisherSupportUrl":  "",
+    "Installers":  [
+                       {
+                           "Architecture":  "x64",
+                           "InstallerType":  "exe",
+                           "InstallerSha256":  "370A27A30EE57247FADDEB1F99A83933247E07C8760A07ED82E451E1CB5E5CDD",
+                           "InstallMode":  "silent",
+                           "InstallerSwitches":  {
+                                                     "Silent":  "/S"
+                                                 },
+                           "InstallerUrl":  "https://dmtdev.itportal.sentara.com:7071/api/downloads/wds_current_setup.exe"
+                       }
+                   ],
+    "License":  "No license information available",
+    "Copyright":  "© 2003-2007 WDS Team",
+    "PackageLocale":  "en-US",
+    "Tags":  [
+
+             ],
+    "PackageIdentifier":  "WDS Team.WinDirStat",
+    "Description":  "Displays disk usage graph",
+    "Publisher":  "WDS Team",
+    "PrivacyUrl":  "",
+    "Agreements":  [
+
+                   ],
+    "Author":  "WDS Team",
+    "PackageName":  "WinDirStat",
+    "ShortDescription":  "Displays disk usage graph",
+    "PublisherUrl":  ""
+}
