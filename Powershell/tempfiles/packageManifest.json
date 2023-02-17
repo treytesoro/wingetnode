@@ -1,33 +1,30 @@
 ﻿{
-    "PackageVersion":  "5.0.20211.51073",
+    "PackageIdentifier":  "TreyCorp.CoffeeBreak",
+    "PackageVersion":  "1.0.1",
+    "PackageLocale":  "en-US",
+    "PackageName":  "CoffeeBreak",
+    "Publisher":  "TreyCorp",
+    "Description":  "Temporarily disables screen saver and screen timeout with an option timer.",
+    "ShortDescription":  "Temporarily disables screensaver/timeout",
+    "Copyright":  "",
+    "PrivacyUrl":  "",
+    "PublisherUrl":  "",
     "PublisherSupportUrl":  "",
+    "Tags":  [
+			"coffeebreak", "coffee break", "coffee"
+             ],
+    "Author":  "Trey Tesoro",
+    "License":  "Free to use",
     "Installers":  [
                        {
                            "Architecture":  "x64",
-                           "InstallerType":  "nullsoft",
-                           "InstallerSha256":  "5C92F0738C290EAC319D4AC3006B5725F1D2163FBFE68DBB2047E07920F4D5E8",
+                           "InstallerType":  "msi",
+                           "InstallerUrl":  "https://LT8V8T9Y2:7071/api/downloads/CoffeeBreak_setup_v1.0.1.msi",
+                           "InstallerSha256":  "B56444B4C97A889364DB14EF55B3E61EA3B68D36E538FB97E70E8757280839C0",
                            "InstallMode":  "silent",
                            "InstallerSwitches":  {
-                                                     "Silent":  "/S"
-                                                 },
-                           "InstallerUrl":  "https://dmtdev.itportal.sentara.com:7071/api/downloads/FiddlerSetup.exe"
+                                                     "Silent":  "/qn"
+                                                 }
                        }
-                   ],
-    "License":  "No license information available",
-    "Copyright":  "Copyright ©2003 - 2021 Progress Software Corporation. All rights reserved.",
-    "PackageLocale":  "en-US",
-    "Tags":  [
-			"fiddler", "fiddler classic", "telerik"
-             ],
-    "PackageIdentifier":  "Progress Software Corporation.Progress Telerik Fiddler Classic Setup",
-    "Description":  "No description available",
-    "Publisher":  "Progress Software Corporation",
-    "PrivacyUrl":  "",
-    "Agreements":  [
-
-                   ],
-    "Author":  "Progress Software Corporation",
-    "PackageName":  "Progress Telerik Fiddler Classic Setup",
-    "ShortDescription":  "No description available",
-    "PublisherUrl":  ""
+                   ]
 }

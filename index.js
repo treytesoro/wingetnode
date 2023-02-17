@@ -196,8 +196,8 @@ async function MongoInsertDocument(collection = 'packages', document) {
 app.use(express.json());
 
 const ssloptions = {
-    key: fs.readFileSync('key.pem', 'utf8'),
-    cert: fs.readFileSync('cert.pem', 'utf8')
+    key: fs.readFileSync('server.key', 'utf8'),
+    cert: fs.readFileSync('server.crt', 'utf8')
 };
 
 const httpsServer = https.createServer(ssloptions, app);
@@ -388,8 +388,8 @@ app.post('/api/manifestSearch', async (req, res) => {
 });
 
 app.get('/api/downloads/:pkgname', (req, res) => {
-    if (fs.existsSync(`C:/Websites/WinGet/packages/${req.params.pkgname}`)) {
-        res.sendFile(`C:/Websites/WinGet/packages/${req.params.pkgname}`);
+    if (fs.existsSync(`${config.PackagesPath}${req.params.pkgname}`)) {
+        res.sendFile(`${config.PackagesPath}${req.params.pkgname}`);
     }
     else {
         res.status(200).json({});
@@ -552,10 +552,23 @@ app.get('/api/packageManifests/:id', async (req, res) => {
     // });
 });
 
-app.put('/api/package', (req, res)=>{
+app.post('/api/package', (req, res)=>{
     console.log(req);
-    res.status(200).json({status: 'ok'});
-    //MongoInsertDocument('packages', )
+    MongoInsertDocument('packages', req.body).then(
+		result=>{
+			console.log(result);
+		}
+	).
+	catch(
+		err=> {
+			
+		}
+	).
+	finally(
+		()=> {
+			res.status(200).json({status: 'ok'});
+		}
+	);
 });
 
 app.listen(7070, () => {
