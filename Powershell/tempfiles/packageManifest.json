@@ -1,29 +1,29 @@
 ﻿{
     "PackageIdentifier":  "TreyCorp.CoffeeBreak",
-    "PackageVersion":  "1.0.1",
+    "PackageVersion":  "1.0.2",
     "PackageLocale":  "en-US",
     "PackageName":  "CoffeeBreak",
     "Publisher":  "TreyCorp",
-    "Description":  "Temporarily disables screen saver and screen timeout with an option timer.",
-    "ShortDescription":  "Temporarily disables screensaver/timeout",
+    "Description":  "Deprives your PC of sleep (and screen timeout).",
+    "ShortDescription":  "Deprives your PC of sleep (and screen timeout).",
     "Copyright":  "",
     "PrivacyUrl":  "",
     "PublisherUrl":  "",
     "PublisherSupportUrl":  "",
     "Tags":  [
-			"coffeebreak", "coffee break", "coffee"
+			"coffee", "coffeebreak", "screensaver"
              ],
     "Author":  "Trey Tesoro",
-    "License":  "Free to use",
+    "License":  "Free",
     "Installers":  [
                        {
                            "Architecture":  "x64",
                            "InstallerType":  "msi",
-                           "InstallerUrl":  "https://LT8V8T9Y2:7071/api/downloads/CoffeeBreak_setup_v1.0.1.msi",
-                           "InstallerSha256":  "B56444B4C97A889364DB14EF55B3E61EA3B68D36E538FB97E70E8757280839C0",
+                           "InstallerUrl":  "https://LT8V8T9Y2:7071/api/downloads/CoffeeBreak_setup_v1.0.2.msi",
+                           "InstallerSha256":  "6F9CC4A8D3D665DE81715F9E98A6FDDBC5A8C5EE2236266DCF27E3BBF850B962",
                            "InstallMode":  "silent",
                            "InstallerSwitches":  {
-                                                     "Silent":  "/qn"
+                                                     "Silent":  "/qn /passive"
                                                  }
                        }
                    ]

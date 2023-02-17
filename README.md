@@ -13,6 +13,22 @@ Please refer to the following for more information on the official reference imp
 ## REST API project and MongoDB configuration
 I'll have more information on these topics soon.
 
+### WebServer
+You will need a signed certificate for your REST webserver. Winget will not allow HTTP rest endpoints. InstallerURLs can be regular http.
+
+You will need to create a directory at the root of the project named `noclone`.  Copy the `config.example.json` to this directory and rename to `config.json`. Edit the fields for your environment.
+
+--
+
+There is still much to work on, but simple searching and installing seem to function well. Searching with the filters `--name`, `--tag`, `--exact` are implemented but may return unexpected results. I'll work on --query last once I finish with all the filters.
+
+### MongoDB
+The only requirement here is an accessible Mongo instance with a database named "winget".<br/>
+For dev/test purposes, I'm using the official mongodb and mongo-express docker images. The sample docker compose file listed they have should work fine for testing.
+```
+https://hub.docker.com/_/mongo
+```
+
 ## Generating and uploading package manifest JSON files.
 In `./Powershell`, there are 3 .ps1 files
 1. parsemsi.ps1
