@@ -1,5 +1,11 @@
 # Wingetnode Project
 
+For the Typescript version please see:
+
+[wingetnodets](https://github.com/treytesoro/wingetnodets)
+
+This current project will likely be abandoned.
+
 ## Introduction
 This is a NodeJS/MongoDB Proof of Concept implementation of the Winget Restsource reference code.
 This code is very much alpha and will later be rewritten in Typescript. 
